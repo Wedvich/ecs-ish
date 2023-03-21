@@ -1,17 +1,18 @@
-export module Component;
+#ifndef COMPONENT_H
+#define COMPONENT_H
 
 #include <concepts>
 
 // Base type for all components.
-export struct Component {
+struct Component {
   virtual ~Component() {}
 };
 
 // Unique identifier for a Component type.
-export typedef std::uint32_t ComponentTypeId;
+typedef std::uint32_t ComponentTypeId;
 
 // Provides unique identifiers for Component types.
-export struct ComponentTypeIndex final {
+struct ComponentTypeIndex final {
   template <std::derived_from<Component> T>
   static ComponentTypeId Id() noexcept {
     static ComponentTypeId id = Count()++;
@@ -24,3 +25,5 @@ private:
     return counter;
   }
 };
+
+#endif // COMPONENT_H

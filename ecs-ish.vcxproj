@@ -89,8 +89,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Component.cppm" />
-    <ClCompile Include="src\Main.cppm" />
+    <ClCompile Include="src\Component.h" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

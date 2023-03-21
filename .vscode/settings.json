@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.cjs": "javascript",
+    "*.cpp": "cpp",
+    "*.mjs": "javascript",
+    "*.svg": "html",
+    ".browserslistrc": "browserslist",
+    ".lintstagedrc": "jsonc",
+    "*.cppm": "cpp",
+    "vector": "cpp"
+  }
+}
