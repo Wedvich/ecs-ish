@@ -2,7 +2,7 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "C/C++: clang++ build active file",
+      "label": "build",
       "command": "/usr/bin/clang++",
       "args": [
         "-fcolor-diagnostics",
@@ -10,7 +10,7 @@
         "-std=c++20",
         "-stdlib=libc++",
         "-g",
-        "${file}",
+        "${fileDirname}/**.cpp",
         "-o",
         "${workspaceFolder}/bin/${fileBasenameNoExtension}"
       ],
